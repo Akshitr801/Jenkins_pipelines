@@ -9,7 +9,7 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 // Pull latest code from GitHub
-                git branch: 'main', url: 'https://github.com/Akshitr801/static-website-ci-cd.git'
+                git branch: 'main', url: https://github.com/Akshitr801/Jenkins_pipelines.git'
             }
         }
 
