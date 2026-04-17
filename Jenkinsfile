@@ -18,7 +18,8 @@ pipeline {
             steps {
                 echo 'Deploying static website...'
                 sh '''
-                    sudo cp -r * /var/www/html/
+                    rm -f /var/www/html/index.html
+                    cp index.html /var/www/html/index.html
                 '''
             }
         }
